@@ -4,7 +4,7 @@ import IconInner from './IconInner';
 
 class FeatherIcon extends Component {
   render() {
-    const { icon, size, className, fill, ...otherProps } = this.props;
+    const { icon, size, className, strokeWidth, fill, ...otherProps } = this.props;
 
     return (
       <svg
@@ -13,7 +13,7 @@ class FeatherIcon extends Component {
         viewBox="0 0 24 24"
         fill={fill || 'none'}
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
         className={`feather feather-${icon} ${className}`}
@@ -29,12 +29,14 @@ FeatherIcon.propTypes = {
   icon: PropTypes.string.isRequired,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   className: PropTypes.string,
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   fill: PropTypes.string
 };
 
 FeatherIcon.defaultProps = {
   size: 24,
-  className: ''
+  className: '',
+  strokeWidth: 1
 };
 
 export default FeatherIcon;
