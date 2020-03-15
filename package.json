@@ -1,5 +1,5 @@
 {
-  "name": "feather-icons-react",
+  "name": "patrikhermansson/feather-icons-react",
   "version": "0.4.1",
   "description": "Feather Icons as a React component.",
   "main": "build/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ianmiller347/feather-icons-react.git"
+    "url": "git+https://github.com/patrikhermansson/feather-icons-react.git"
   },
   "keywords": [
     "feather",
